@@ -28,4 +28,21 @@ public class Inimigo : MonoBehaviour
             transform.position = newPos;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print(other.gameObject.name);
+
+        //toda função use parenteses após
+        if (other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+
+        if (other.CompareTag("Shoot"))
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject , Time.deltaTime);
+        }
+    }
 }

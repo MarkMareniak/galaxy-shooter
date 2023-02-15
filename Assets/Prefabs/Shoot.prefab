@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2340749397124180199}
   - component: {fileID: -4414859633948244429}
+  - component: {fileID: 6580196675407014975}
   m_Layer: 0
   m_Name: Shoot
-  m_TagString: Untagged
+  m_TagString: Shoot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +46,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+--- !u!136 &6580196675407014975
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364957131501371050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.042491376
+  m_Height: 0.19092155
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.0004607439, z: 0.000000059604645}
 --- !u!1 &4798274063342255116
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +71,6 @@ GameObject:
   - component: {fileID: 5302519737139470404}
   - component: {fileID: 1691040707756821038}
   - component: {fileID: 1536766418644636164}
-  - component: {fileID: 5731504656139929019}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -125,17 +139,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &5731504656139929019
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4798274063342255116}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 1
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}

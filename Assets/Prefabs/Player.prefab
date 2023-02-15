@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2679496035844643039}
   - component: {fileID: 8101608978654504146}
+  - component: {fileID: 7809458354073599639}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,6 +49,22 @@ MonoBehaviour:
   speed: 5.26
   tiro: {fileID: 364957131501371050, guid: 50d277a1a4df72a489ff7541d88f6b02, type: 3}
   offsetTiro: {fileID: 2360437947110735352}
+  fireRate: 0.25
+  tirosPorRajada: 3
+  intervalaRajadas: 0.5
+--- !u!65 &7809458354073599639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2181781749484591542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3579131507013625958
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +106,6 @@ GameObject:
   - component: {fileID: 9108497950707670197}
   - component: {fileID: 9152829231576929329}
   - component: {fileID: 8955341669403984004}
-  - component: {fileID: 6037322958169600682}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -158,16 +174,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6037322958169600682
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3912375869959098745}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
